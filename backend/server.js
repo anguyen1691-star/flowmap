@@ -6,7 +6,10 @@ import Anthropic from '@anthropic-ai/sdk';
 dotenv.config({ override: true });
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ['https://flowmap-wddg.vercel.app', 'http://localhost:5173'],
+  credentials: true
+}));
 app.use(express.json());
 
 const client = new Anthropic({
