@@ -6,10 +6,7 @@ import Anthropic from '@anthropic-ai/sdk';
 dotenv.config({ override: true });
 
 const app = express();
-app.use(cors({
-  origin: ['https://flowmap-emr.vercel.app', 'http://localhost:5173'],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 const client = new Anthropic({
