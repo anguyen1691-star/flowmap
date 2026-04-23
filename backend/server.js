@@ -7,7 +7,7 @@ dotenv.config({ override: true });
 
 const app = express();
 app.use(cors({
-  origin: ['https://flowmap-wddg.vercel.app', 'http://localhost:5173'],
+  origin: ['https://flowmap-enrr.vercel.app', 'http://localhost:5173'],
   credentials: true
 }));
 app.use(express.json());
