@@ -1,4 +1,4 @@
-const API_URL = 'https://easternflowman.up.railway.app';
+const API_URL = 'https://easternflowmap.up.railway.app';
 
 export async function sendChatMessage(message, diagramState, history) {
   try {
